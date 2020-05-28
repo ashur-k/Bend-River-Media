@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+
+
+{% block head %} 
+<title>BRM Home Page</title>
+{% endblock %}
+
+{% block body %} 
+<section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src= "{{ url_for('static', filename='img/wedding22.jpg') }}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading text-white mb-4">
+            <span class="section-heading-lower">Photos of highest quality and values</span>
+            <span class="section-heading-upper">Wedding Photography</span>
+          </h2>
+          <p class="mb-3 text-white">Bend River Media is a established media business, built on a solid foundation of experience
+           and skill. Whatever your media needs, be it videography, event photography or professional headshots we 
+           have the creative and technical expertise necessary to provide you with the highest quality product at a
+            fair and affordable price.
+          </p>
+          <div class="intro-button mx-auto">
+            <a class="btn btn-primary btn-xl" href="{{ url_for('contact_us') }}">Visit Us Today!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-9 mx-auto">
+          <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Our Promise</span>
+              <span class="section-heading-lower">To You</span>
+            </h2>
+            <p class="mb-0">We capture faithfully, candidly and as far as possible remaining unobtrusive. We show high committment in taking stylistic images 
+            creating authentic impressions of your day and capturing memories that you can treasure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section class="page-section cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7 mx-auto">
+            <div class="video-container">
+				<video class="video-bg" id="myVideo" autoplay muted loop>
+					<source src="{{ url_for('static', filename='videos/video.mp4') }}" type="video/mp4">
+                </video>
+			</div>
+        </div>
+        <div class="col-xl-5 mx-auto">
+             <div class="cta-inner text-center rounded">
+            <h2 class="section-heading mb-4">
+              <span class="section-heading-upper">Videography</span>
+              
+            </h2>
+            <p class="mb-0">Our aim is to provide a high quality photographic or video record, that captures the full atmosphere and spectacle of any special event or occasion that is important to you. In either video or photographic format our service begins by working closely with you to understand your needs and requirements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+
+{% endblock %}
